@@ -21,8 +21,8 @@
     else {
       today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
     }
-    let miliseconds = today - startDate
-    let numWeek = miliseconds / 1000 / 7 / 24 / 60 / 60
+    let milliseconds = today - startDate
+    let numWeek = milliseconds / 1000 / 7 / 24 / 60 / 60
     let result = types[Math.floor(numWeek) % 2]
     
     ele.innerHTML = result
