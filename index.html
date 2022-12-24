@@ -48,7 +48,7 @@
       var documentWidth = window.innerWidth;
 
       //定义生成一片雪花的毫秒数
-      var millisec = 300;
+      var millisec = 500;
       //2、设置第一个定时器，周期性定时器，每隔一段时间（millisec）生成一片雪花；
       setInterval(function () {
         //页面加载之后，定时器就开始工作
@@ -60,16 +60,18 @@
 
         //随机生成雪花大小
         // var flakeSize = 5 + 20 * Math.random();
-        var flakeSize = 25;
+        var flakeSize = 50;
 
         //随机生成雪花下落持续时间
         var durationTime = 4000 + 7000 * Math.random();
 
         //随机生成雪花下落 开始 时的透明度
-        var startOpacity = 0.7 + 0.3 * Math.random();
+        // var startOpacity = 0.7 + 0.3 * Math.random();
+        var startOpacity = 1.0
 
         //随机生成雪花下落 结束 时的透明度
-        var endOpacity = 0.2 + 0.2 * Math.random();
+        // var endOpacity = 0.2 + 0.2 * Math.random();
+        var endOpacity = 1.0
 
         //克隆一个雪花模板
         var cloneFlake = flake.cloneNode(true);
