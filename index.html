@@ -6,7 +6,8 @@
   </head>
   <body style="background-color: rgb(48, 48, 48);">
     <div style="text-align: center; margin-top: 15vh; font-size: 80; color: rgb(223, 223, 223);">
-      <div>圣诞快乐🎄老婆宝宝</div>
+      <div>最可爱的老婆宝宝</div>
+      
       现在是<span style="color: rgb(251, 114, 153)" id="weekType"></span>周 <span style="font-size: 70;">(՞•Ꙫ•՞)</span>
     </div>
     <div style="text-align: center; margin-top: 40px;">
@@ -20,11 +21,11 @@
     let ele = document.getElementById("weekType")
     
     types = ['单', '双']
-    let startDate = new Date('2022', '08', '26')
+    let startDate = new Date('2023', '01', '06') // 月份从零开始计算
     let now = new Date()
     let debug = false
     if (debug) {
-      today = new Date('2022', '08', '29')
+      today = new Date('2023', '01', '06')
     }
     else {
       today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
@@ -106,8 +107,8 @@
       }, millisec);
     }
 
-    animate("❄️")
-    animate("🎄")
-    animate("😘")
+    // animate("❄️")
+    // animate("🎄")
+    // animate("😘")
   </script>
 </html>
