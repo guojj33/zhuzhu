@@ -11,21 +11,21 @@
       现在是<span style="color: rgb(251, 114, 153)" id="weekType"></span>周 <span style="font-size: 70;">(՞•Ꙫ•՞)</span>
     </div>
     <div style="text-align: center; margin-top: 40px;">
-      <img src="./assets/1.jpg" style="width: 50%; margin: auto; z-index: -1;"/>
+      <img src="./assets/IMG_7919.GIF" style="width: 30%; margin: auto; z-index: -1;"/>
     </div>
     <div style="text-align: center; margin-top: 100px;">
-      <embed src="./assets/lessons.svg" style="scale: 135%;" type="image/svg+xml" />
+      <embed src="./assets/lessons.svg" style="scale: 100%;" type="image/svg+xml" />
     </div>
   </body>
   <script type="text/javascript">
     let ele = document.getElementById("weekType")
     
     types = ['单', '双']
-    let startDate = new Date('2023', '01', '06') // 月份从零开始计算
+    let startDate = new Date('2023', '07', '28') // 月份从零开始计算，取该星期的星期一为起始
     let now = new Date()
     let debug = false
     if (debug) {
-      today = new Date('2023', '01', '06')
+      today = new Date('2023', '08', '07')
     }
     else {
       today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
